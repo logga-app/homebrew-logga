@@ -13,6 +13,10 @@ cask "logga@1.0.0" do
   pkg "logga.pkg"
   uninstall pkgutil: "com.logga.*"
 
+  uninstall_preflight do
+    system_command "/Applications/logga.app/Contents/MacOS/logga", args: ["unload"], sudo: false
+  end
+
   zap trash: [
     "/Library/Application Support/Logga",
   ],
