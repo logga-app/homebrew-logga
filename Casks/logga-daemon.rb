@@ -11,7 +11,7 @@ cask "logga-daemon" do
     depends_on macos: ">= :ventura"
   
     pkg "logga-daemon.pkg"
-    uninstall pkgutil: "com.logga.*",
+    uninstall pkgutil: "com.logga-daemon.*",
               delete: "/Library/Application Support/Logga",
               launchctl: [
                 "com.logga.client.daemon.plist"
