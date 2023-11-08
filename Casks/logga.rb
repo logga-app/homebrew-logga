@@ -1,4 +1,4 @@
-cask "logga@1.0.0" do
+cask "logga" do
   version "1.0.0"
   sha256 "326a78e6ef17a1c260620dcb9013e6f961e219ff22db41e40143c25f97c7cdfc"
 
