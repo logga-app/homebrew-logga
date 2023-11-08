@@ -4,7 +4,7 @@ cask "logga@1.0.0" do
 
   url "https://github.com/logga-app/logga-public/releases/download/#{version}/logga.pkg",
     verified: "github.com/logga-app/logga-public/releases/download/"
-  name "logga"
+  name "logga app"
   desc "Audit logging on modern macOS"
   homepage "https://getlogga.com/"
 
