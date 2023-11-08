@@ -18,10 +18,10 @@ cask "logga" do
   end
 
   zap trash: [
-    "/Library/Application Support/Logga",
+    "/Library/Application\ Support/Logga",
   ],
   rmdir: [
-    "/Library/Application Support/Logga",
+    "/Library/Application\ Support/Logga",
   ]
 
   caveats do
