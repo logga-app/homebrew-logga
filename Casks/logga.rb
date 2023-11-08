@@ -11,7 +11,7 @@ cask "logga" do
   depends_on macos: ">= :ventura"
 
   pkg "logga.pkg"
-  uninstall pkgutil: "com.logga.*"
+  uninstall pkgutil: "com.logga.*",
             delete: "/Library/Application Support/Logga"
 
   uninstall_preflight do
