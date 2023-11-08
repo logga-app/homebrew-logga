@@ -1,6 +1,6 @@
 cask "logga@1.0.0" do
   version "1.0.0"
-  sha256 "hash"
+  sha256 "326a78e6ef17a1c260620dcb9013e6f961e219ff22db41e40143c25f97c7cdfc"
 
   url "https://github.com/logga-app/logga-public/releases/download/#{version}/logga.pkg",
     verified: "github.com/logga-app/logga-public/releases/download/"
