@@ -3,6 +3,7 @@ cask "logga" do
   sha256 "hash"
 
   url "https://github.com/logga-app/logga-public/releases/download/#{version}/logga.pkg",
+    verified: "github.com/logga-app/logga-public/releases/download/"
   name "logga"
   desc "Audit logging on modern macOS"
   homepage "https://getlogga.com/"
