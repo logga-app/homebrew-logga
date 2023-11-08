@@ -1,6 +1,6 @@
 cask "logga-daemon" do
     version "1.0.0"
-    sha256 "f0a67ef4be65ff645db6fbcccafb5c734cbbbbc98b2aa1c98b7aa1b64135a579"
+    sha256 "8b928ee4dac348f0ab31ab207ea5da03d5f4d5418afb3dd275dfa547d5a60079"
   
     url "https://github.com/logga-app/logga-public/releases/download/#{version}/logga-daemon.pkg",
       verified: "github.com/logga-app/logga-public/releases/download/"
