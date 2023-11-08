@@ -1,6 +1,6 @@
 cask "logga" do
   version "1.0.0"
-  sha256 "326a78e6ef17a1c260620dcb9013e6f961e219ff22db41e40143c25f97c7cdfc"
+  sha256 "d4bf7bd79d49eebc2b2cd9672f83902362b36c630e7ed4ce4978fad5685f059c"
 
   url "https://github.com/logga-app/logga-public/releases/download/#{version}/logga.pkg",
     verified: "github.com/logga-app/logga-public/releases/download/"
@@ -11,7 +11,7 @@ cask "logga" do
   depends_on macos: ">= :ventura"
 
   pkg "logga.pkg"
-  uninstall pkgutil: "com.logga.*",
+  uninstall pkgutil: "com.logga.client.*",
             delete: "/Library/Application Support/Logga"
 
   uninstall_preflight do
