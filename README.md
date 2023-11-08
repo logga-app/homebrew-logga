@@ -1,4 +1,4 @@
-<h1 align="center">brew tap logga/logga</h1>
+<h1 align="center">brew tap logga-app/logga</h1>
 <p align="center">
     Audit logging on modern macOS
 </p>
@@ -15,7 +15,7 @@
 Fetch the formulae in this tap:
 
 ```zsh
-brew tap logga/logga
+brew tap logga-app/logga
 ```
 
 Install latest or exact version
