@@ -12,18 +12,16 @@ cask "logga" do
 
   pkg "logga.pkg"
   uninstall pkgutil: "com.logga.*"
+            delete: "/Library/Application Support/Logga"
 
   uninstall_preflight do
     system_command "/Applications/logga.app/Contents/MacOS/logga", args: ["unload"], sudo: false
   end
 
   zap trash: [
-    "/Library/Application\ Support/Logga",
+    "/Library/Application Support/Logga",
   ],
-  rmdir: [
-    "/Library/Application\ Support/Logga",
-  ]
-
+ 
   caveats do
     license "BSD 3-Clause"
   end
