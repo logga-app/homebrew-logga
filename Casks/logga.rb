@@ -20,7 +20,7 @@ cask "logga" do
 
   zap trash: [
     "/Library/Application Support/Logga",
-  ],
+  ]
  
   caveats do
     license "BSD 3-Clause"
