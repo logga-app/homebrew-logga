@@ -31,6 +31,6 @@ cask "logga-daemon" do
     ]
    
     caveats "To be able to use EndpointSecurity, " \
-    "#{token} must be granted Full Disk Access under System Preferences → Security & Privacy → Privacy.\n" \
+    "#{token} must be granted Full Disk Access under System Preferences → Security & Privacy → Privacy.\n\n" \
     "Starting the daemon: run 'sudo launchctl load -w /Library/LaunchDaemons/com.logga.client.daemon.service.plist'"
   end
