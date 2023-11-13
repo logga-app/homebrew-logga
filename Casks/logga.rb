@@ -10,7 +10,7 @@ cask "logga" do
 
   depends_on macos: ">= :ventura"
 
-  pkg "logga.pkg"
+  pkg "logga-client-#{version}.pkg"
   uninstall pkgutil: "com.logga.client.*",
             delete: "/Library/Application Support/Logga"
 

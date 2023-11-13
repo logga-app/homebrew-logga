@@ -12,7 +12,7 @@ cask "logga-daemon" do
   
     daemon_path = "/Library/LaunchDaemons/com.logga.client.daemon.plist"
 
-    pkg "logga-daemon.pkg"
+    pkg "logga-daemon-#{version}.pkg"
     uninstall pkgutil: "com.logga.daemon.*",
               delete: [
                 "/Library/Application Support/Logga",
