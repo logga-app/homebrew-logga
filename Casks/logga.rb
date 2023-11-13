@@ -1,6 +1,6 @@
 cask "logga" do
   version "1.0.3"
-  sha256 "46030f61a0078502b11785f3e8fc4fcf529d66fe9b58aef9cfda4241e9ceacbc"
+  sha256 "0ddc7fc1f3871e46d1d9a994e5bd589fa161c5de6added4fe68f6dd444262726"
 
   url "https://github.com/logga-app/logga-public/releases/download/#{version}/logga-client-#{version}.pkg",
     verified: "github.com/logga-app/logga-public/releases/download/"
@@ -22,7 +22,6 @@ cask "logga" do
     "/Library/Application Support/Logga",
   ]
  
-  caveats do
-    license "BSD 3-Clause"
-  end
+  caveats "To be able to use EndpointSecurity, " \
+  "#{token} must be granted Full Disk Access under System Preferences → Security & Privacy → Privacy"
 end

@@ -1,6 +1,6 @@
 cask "logga-daemon" do
     version "1.0.3"
-    sha256 "d8b65b0252b88d305739f3bd76695a648504f7978ae91e18619e617c5c87516e"
+    sha256 "dfe1dad17febcc879e1f60f7b578c497184907034f02c05eda349a701c910742"
   
     url "https://github.com/logga-app/logga-public/releases/download/#{version}/logga-daemon-#{version}.pkg",
       verified: "github.com/logga-app/logga-public/releases/download/"
@@ -30,7 +30,7 @@ cask "logga-daemon" do
       "/Library/Application Support/Logga",
     ]
    
-    caveats do
-      license "BSD 3-Clause"
-    end
+    caveats "To be able to use EndpointSecurity, " \
+    "#{token} must be granted Full Disk Access under System Preferences → Security & Privacy → Privacy." \
+    "Starting the daemon: run 'sudo launchctl load -w /Library/LaunchDaemons/com.logga.client.daemon.service.plist'"
   end
