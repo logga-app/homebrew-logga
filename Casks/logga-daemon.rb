@@ -10,7 +10,7 @@ cask "logga-daemon" do
   
     depends_on macos: ">= :ventura"
   
-    daemon_path = "/Library/LaunchDaemons/com.logga.client.daemon.plist"
+    daemon_path = "/Library/LaunchDaemons/com.logga.client.daemon.service.plist"
 
     pkg "logga-daemon-#{version}.pkg"
     uninstall pkgutil: "com.logga.daemon.*",
