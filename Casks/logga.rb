@@ -2,7 +2,7 @@ cask "logga" do
   version "1.0.3"
   sha256 "46030f61a0078502b11785f3e8fc4fcf529d66fe9b58aef9cfda4241e9ceacbc"
 
-  url "https://github.com/logga-app/logga-public/releases/download/#{version}/logga.pkg",
+  url "https://github.com/logga-app/logga-public/releases/download/#{version}/logga-client-#{version}.pkg",
     verified: "github.com/logga-app/logga-public/releases/download/"
   name "logga app"
   desc "Audit logging on modern macOS"
