@@ -19,7 +19,7 @@ cask "logga-daemon" do
                 daemon_path
               ],
               launchctl: [
-                "com.logga.client.daemon"
+                "com.logga.client.daemon.service"
               ]
 
     uninstall_preflight do
