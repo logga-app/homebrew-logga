@@ -1,6 +1,6 @@
 cask "logga-daemon" do
-  version "1.0.9"
-  sha256 "8b2d2b4e3817979551d98f788817f2852ab4f7660e86c388f8dac5a470e29cd0"
+  version "1.1.0"
+  sha256 "5afc392fbcec0c800f3a8f401d74a251b00b29a601c019daea98e2ba4511b634"
 
   url "https://storage.getlogga.com/logga-daemon-#{version}.pkg",
     verified: "storage.getlogga.com"

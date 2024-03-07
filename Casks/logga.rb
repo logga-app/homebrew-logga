@@ -1,6 +1,6 @@
 cask "logga" do
-  version "1.0.9"
-  sha256 "ca6a755a61cb43aa5dd768783340a795645cda5876ed2ffd1430e0114b80f167"
+  version "1.1.0"
+  sha256 "74d07f0cad4d999808510bf34c0c548ed5284fb12ef9847d3bb71fb35ac3f7c7"
 
   url "https://storage.getlogga.com/logga-client-#{version}.pkg",
     verified: "storage.getlogga.com"
