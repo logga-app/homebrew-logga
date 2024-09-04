@@ -1,6 +1,6 @@
 cask "logga-daemon" do
-  version "1.1.1"
-  sha256 "f4fcf86e5ad5790907f1f7cad512e4ae812506582960eed1186aeccd36c79888"
+  version "1.1.2"
+  sha256 "fb6317cf63aeab7cb9452f133a67e5387b84ae5c87a74ec64cc299a84c2690d8"
 
   url "https://storage.getlogga.com/logga-daemon-#{version}.pkg",
     verified: "storage.getlogga.com"
@@ -11,7 +11,6 @@ cask "logga-daemon" do
   depends_on macos: ">= :ventura"
 
   daemon_path = "/Library/LaunchDaemons/com.logga.client.daemon.service.plist"
-
   pkg "logga-daemon-#{version}.pkg"
   uninstall pkgutil: "com.logga.daemon.*",
             delete: [
@@ -21,7 +20,6 @@ cask "logga-daemon" do
             launchctl: [
               "com.logga.client.daemon.service"
             ]
-
   uninstall_preflight do
       system_command "/bin/launchctl", args: ["unload", "-w", daemon_path], sudo: true
   end
